@@ -1,5 +1,6 @@
 # Experimental Datasets for Symbolic Regression
 
+This repository contains datasets created by the following authors: Jiří Kubalík, Robert Babuška
 
 ## Introduction
 
