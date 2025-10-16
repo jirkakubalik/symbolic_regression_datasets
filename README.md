@@ -32,14 +32,20 @@ These datasets were used in the paper [Neuro-Evolutionary Approach to Physics-Aw
 
 **Test problems**
 
-- ```resistors``` The task is to find a model of the equivalent resistance of two resistors in parallel, $r = r_1 r_2/(r_1 + r_2)$, given noisy training data sampled uniformly from the interpolation domain $D_i = [0.0001, 20]$ Ω. 
+- Datset: ```resistors``` The task is to find a model of the equivalent resistance of two resistors in parallel, $r = r_1 r_2/(r_1 + r_2)$, given noisy training data sampled uniformly from the interpolation domain $D_i = [0.0001, 20]$ Ω. 
 The interpolation and extrapolation test data are sampled from the domain $D_i$ and the extrapolation domain $D_e = [20.0001, 40]$, respectively. See the figure below.<br>
+Date: 2025-09-05<br>
+Author: Jiří Kubalík<br>
 <img src="figures/resistors_data.png" alt="resistors data" width="300"/>
 
-- ```magman``` The magnetic manipulation system consists of an iron ball moving on a rail and an electromagnet placed at a fixed position under the rail. The goal is to find a nonlinear model of the magnetic force, $f(x)$, affecting the ball as a function of the horizontal distance, $x$, between the iron ball and the electromagnet, given a constant current $i$ through the coil. The whole operating region of magman is the interval $D = [−0.075, 0.075]$ m out of which only a small part $D_i = [−0.027, 0.027]$ m is covered by the training data set with 601 samples. These data samples were measured on the real system. The interpolation and extrapolation test data are sampled from the interval $D_i$ and the domain $D_e = D - D_i$, respectively, using an empirical model $f^e(x) = −𝑖 𝑐_1 𝑥/(𝑥^2 + 𝑐_2)^3$. See the figure below.<br>
+- Datset: ```magman``` The magnetic manipulation system consists of an iron ball moving on a rail and an electromagnet placed at a fixed position under the rail. The goal is to find a nonlinear model of the magnetic force, $f(x)$, affecting the ball as a function of the horizontal distance, $x$, between the iron ball and the electromagnet, given a constant current $i$ through the coil. The whole operating region of magman is the interval $D = [−0.075, 0.075]$ m out of which only a small part $D_i = [−0.027, 0.027]$ m is covered by the training data set with 601 samples. These data samples were measured on the real system. The interpolation and extrapolation test data are sampled from the interval $D_i$ and the domain $D_e = D - D_i$, respectively, using an empirical model $f^e(x) = −𝑖 𝑐_1 𝑥/(𝑥^2 + 𝑐_2)^3$. See the figure below.<br>
+Date: 2025-09-05<br>
+Author: Robert Babuška<br>
 <img src="figures/magman_data.png" alt="magman data" width="300"/>
 
-- ```magic formula``` This problem considers the tire-road interaction model, where the longitudinal force $F(\kappa)$ is the following function of the wheel slip𝜅 (aka the ‘magic’ formula): $F(\kappa) = m g d \sin(c \arctan(b(1− e) \kappa + e \arctan(b \kappa)))$, where $b$, $c$, $d$ and $e$ are road surface-specific constants. Here, we consider the reference model with $m = 407.75$ kg, $g = 9.81$ ms $^{−1}$, and the slip force parameters $(b, c, d, e) = (55.56, 1.35, 0.4, 0.52)$. A training data set of 110 samples was generated on the interval $D = [0, 1]$ using the reference model. The data are intentionally sampled unevenly. The whole interval is divided into $D_i = [0, 0.02] ∪ [0.2, 0.99]$ and $D_e = [0.03, 0.1]$, with well-represented $D_i$ and poorly-represented $D_e$. See the figure below.<br>
+- Datset: ```magic formula``` This problem considers the tire-road interaction model, where the longitudinal force $F(\kappa)$ is the following function of the wheel slip𝜅 (aka the ‘magic’ formula): $F(\kappa) = m g d \sin(c \arctan(b(1− e) \kappa + e \arctan(b \kappa)))$, where $b$, $c$, $d$ and $e$ are road surface-specific constants. Here, we consider the reference model with $m = 407.75$ kg, $g = 9.81$ ms $^{−1}$, and the slip force parameters $(b, c, d, e) = (55.56, 1.35, 0.4, 0.52)$. A training data set of 110 samples was generated on the interval $D = [0, 1]$ using the reference model. The data are intentionally sampled unevenly. The whole interval is divided into $D_i = [0, 0.02] ∪ [0.2, 0.99]$ and $D_e = [0.03, 0.1]$, with well-represented $D_i$ and poorly-represented $D_e$. See the figure below.<br>
+Date: 2025-09-05<br>
+Author: Robert Babuška<br>
 <img src="figures/magic_data.png" alt="magic formula data" width="300"/>
 
 
